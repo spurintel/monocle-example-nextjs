@@ -6,7 +6,7 @@
     </picture>
   </a>
   <br />
-  <h1>Monocle Next.js Exampe</h1>
+  <h1>Monocle Next.js Example</h1>
   <p>
     A simple Next.js example to get you started with Monocle.
   </p>
@@ -19,7 +19,7 @@
 
 2. Navigate to the Monocle tab and create a new Application.
 
-3. Set the following environment variable into `.env.local` filed located at the root of the directory.
+3. Set the following environment variables in a `.env.local` file located at the root.
 
 ```bash
 MONOCLE_SECRET_KEY=<YOUR SECRET KEY>
@@ -28,7 +28,7 @@ NEXT_PUBLIC_MONOCLE_PUBLISHABLE_KEY=<YOUR PUBLISHABLE KEY>
 
 ## Running
 
-First, install dependencies:
+Install dependencies:
 
 ```bash
 npm install
@@ -40,4 +40,4 @@ Run the development server:
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
