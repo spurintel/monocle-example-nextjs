@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
+import { MonocleProvider } from '@spur.us/monocle-nextjs';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import { MonocleProvider } from '@spur.us/monocle-nextjs';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
