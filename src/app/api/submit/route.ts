@@ -6,9 +6,9 @@ export async function POST(request: NextRequest) {
 
   const monocle = await monocleClient();
 
-  let decryptedAssessment;
+  let policyDecision;
   try {
-    decryptedAssessment = await monocle.decryptAssessment(body.monocle);
+    policyDecision = await monocle.evaluateAssessment(body.monocle);
   } catch (error) {
     console.error(error);
     return NextResponse.json(
@@ -20,5 +20,5 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  return NextResponse.json({ assessment: decryptedAssessment });
+  return NextResponse.json({ ...policyDecision });
 }

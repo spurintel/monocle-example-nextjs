@@ -11,7 +11,7 @@ import { Card } from '@/components/ui/card';
 
 export default function Home() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const [decryptedAssessment, setDecryptedAssessment] = useState<any>(null);
+  const [policyDecision, setPolicyDecision] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
 
   const { assessment, isLoading } = useMonocle();
@@ -41,7 +41,7 @@ export default function Home() {
     }
 
     const resData = await res.json();
-    setDecryptedAssessment(resData.assessment);
+    setPolicyDecision(resData);
   };
 
   if (isLoading) {
@@ -63,15 +63,10 @@ export default function Home() {
         width={1054}
         className="h-10 w-auto"
       />
-      {decryptedAssessment ? (
+      {policyDecision ? (
         <Card className="w-full max-w-[472px] flex flex-col gap-6">
-          <Assessment
-            assessment={JSON.stringify(decryptedAssessment, null, 2)}
-          />
-          <Button
-            className="w-full"
-            onClick={() => setDecryptedAssessment(null)}
-          >
+          <Assessment assessment={JSON.stringify(policyDecision, null, 2)} />
+          <Button className="w-full" onClick={() => setPolicyDecision(null)}>
             Reset
           </Button>
         </Card>
