@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^2.2.2",
-    "@spur.us/monocle-nextjs": "^0.4.1-canary.v20250521185758",
+    "@spur.us/monocle-nextjs": "^0.4.1-canary.v20250702201215",
     "clsx": "^2.1.1",
     "next": "15.3.1",
     "react": "^19.0.0",
