@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^2.2.2",
+    "@hono/node-server": "^2.1.6",
     "@modelcontextprotocol/sdk": "^1.32.1",
     "@spur.us/monocle-nextjs": "^0.4.0",
     "clsx": "^2.1.1",
